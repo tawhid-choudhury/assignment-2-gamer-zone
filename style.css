@@ -1,0 +1,227 @@
+/* Shared design */
+
+/* work-sans-from-google-fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;800&family=Lato:wght@400;700&family=Open+Sans:wght@400;700;800&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+* {
+  font-family: "Inconsolata", monospace;
+  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Space Mono", monospace;
+  font-family: "Work Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+ul {
+  list-style: none;
+}
+li {
+  line-height: 166.667%;
+}
+.description500 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.description400 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 166.667%;
+}
+.semibold {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.extrabold {
+  font-size: 6rem;
+  font-weight: 800;
+}
+.bold {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+.btnpink {
+  margin-top: 41px;
+  background-color: #ff42a5;
+  color: white;
+  padding: 21px 40px;
+  border-radius: 48px;
+  margin-right: 24px;
+  border: none;
+}
+.btnpink:hover {
+  color: #ff42a5;
+  background-color: white;
+}
+.btnblue {
+  border: none;
+  margin-top: 41px;
+  background-color: #4ec5f7;
+  color: white;
+  padding: 21px 40px;
+  border-radius: 48px;
+}
+.btnblue:hover {
+  color: #4ec5f7;
+  background-color: white;
+}
+
+.pink {
+  color: #ff42a5;
+}
+.grey {
+  color: #534c64;
+}
+.navy {
+  color: #0b0223;
+}
+.gradient {
+  background: linear-gradient(to bottom, #f948b2, #8758f1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+/*_________________________shared design end _________________________*/
+
+/* _________________________NAV DESIGNS_________________________ */
+header {
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+  padding: 1.2rem 0rem;
+}
+nav {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logoNname,
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+.logoNname {
+  gap: 20px;
+}
+nav > ul {
+  gap: 2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.special-li {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.1rem 1.5rem;
+}
+/*_________________________nav-design-end _________________________*/
+
+/* _________________________BANNER-DESIGN-START ___________________*/
+.banner {
+  background-image: url("images/Group 14.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+.banner-container {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.div2-banner {
+  max-width: 711px;
+}
+.div2-banner > img {
+  width: 100%;
+}
+/* _________________________BANNER-DESIGN-end______________________*/
+/* _________________________for mobile device ____________________*/
+@media screen and (max-width: 576px) {
+  .div1-background {
+    /* margin: 10px; */
+    max-width: 375px;
+    height: 291.666px;
+    background-image: url("images/Group 14.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .extrabold {
+    font-size: 4rem;
+  }
+  .semibold {
+    font-size: 2rem;
+  }
+  .description500 {
+    font-size: 0.83rem;
+  }
+  .description400 {
+    font-size: 0.75rem;
+  }
+  .bold {
+    font-size: 2rem;
+  }
+  .btnblue {
+    padding: 1rem 1.2rem;
+  }
+  .btnpink {
+    padding: 1rem 1.2rem;
+    margin-right: 10px;
+  }
+  nav > ul,
+  nav {
+    flex-direction: column;
+  }
+  nav > ul {
+    margin-top: 2rem;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    gap: 200px;
+  }
+  .banner {
+    background-image: none;
+  }
+  .div1-banner {
+    padding: 50px;
+  }
+}
+/* _________________________for tablet device _____________________*/
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .extrabold {
+    font-size: 4rem;
+  }
+  .semibold {
+    font-size: 2rem;
+  }
+  .description500 {
+    font-size: 0.83rem;
+  }
+  .description400 {
+    font-size: 0.75rem;
+  }
+  .bold {
+    font-size: 2rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav > ul {
+    margin-top: 2rem;
+  }
+  .banner-container {
+    justify-content: space-around;
+  }
+  .div2-banner {
+    width: 50%;
+  }
+}
