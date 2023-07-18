@@ -11,8 +11,9 @@
   margin: 0px;
   padding: 0px;
 }
-ul {
+.banner ul {
   list-style: none;
+  margin-bottom: 41px;
 }
 li {
   line-height: 166.667%;
@@ -25,6 +26,7 @@ li {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 166.667%;
+  margin-bottom: 2rem;
 }
 .semibold {
   font-size: 3rem;
@@ -39,23 +41,26 @@ li {
   font-weight: 700;
   line-height: 125%;
 }
+.bold2 {
+  font-size: 2rem;
+}
 
 .btnpink {
-  margin-top: 41px;
   background-color: #ff42a5;
   color: white;
   padding: 21px 40px;
   border-radius: 48px;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   border: none;
+  margin-bottom: 2rem;
 }
 .btnpink:hover {
   color: #ff42a5;
-  background-color: white;
+  background-color: lightgray;
 }
 .btnblue {
+  margin-left: 10px;
   border: none;
-  margin-top: 41px;
   background-color: #4ec5f7;
   color: white;
   padding: 21px 40px;
@@ -63,7 +68,7 @@ li {
 }
 .btnblue:hover {
   color: #4ec5f7;
-  background-color: white;
+  background-color: lightgray;
 }
 
 .pink {
@@ -141,8 +146,33 @@ nav > ul {
 .div2-banner > img {
   width: 100%;
 }
-/* _________________________BANNER-DESIGN-end______________________*/
-/* _________________________for mobile device ____________________*/
+/* _________________________BANNER-DESIGN-end ______________________*/
+
+/* _________________________We Are Gamer START______________________*/
+.we-are-gamer {
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.div2gamer {
+  max-width: 520px;
+}
+.we-are-gamer h1 {
+  margin-bottom: 1.5rem;
+}
+.div1gamer {
+  max-width: 868px;
+  /* border: 3px solid tan; */
+}
+.div1gamer > img {
+  width: 100%;
+}
+/* _________________________We Are Gamer END  ______________________*/
+/* _________________________for mobile device   ____________________*/
 @media screen and (max-width: 576px) {
   .div1-background {
     /* margin: 10px; */
