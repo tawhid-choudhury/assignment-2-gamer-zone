@@ -261,6 +261,9 @@ nav > ul {
   .banner-container {
     justify-content: space-around;
   }
+  .banner-ul {
+    margin-bottom: 0.9rem;
+  }
   .div2-banner {
     width: 50%;
   }
