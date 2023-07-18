@@ -1,4 +1,7 @@
 /* Shared design */
+:root {
+  --pnk: #ff42a5;
+}
 
 /* work-sans-from-google-fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700;800&family=Lato:wght@400;700&family=Open+Sans:wght@400;700;800&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap");
@@ -10,10 +13,6 @@
   font-family: "Work Sans", sans-serif;
   margin: 0px;
   padding: 0px;
-}
-.banner ul {
-  list-style: none;
-  margin-bottom: 41px;
 }
 li {
   line-height: 166.667%;
@@ -46,7 +45,7 @@ li {
 }
 
 .btnpink {
-  background-color: #ff42a5;
+  background-color: var(--pnk);
   color: white;
   padding: 21px 40px;
   border-radius: 48px;
@@ -55,7 +54,7 @@ li {
   margin-bottom: 2rem;
 }
 .btnpink:hover {
-  color: #ff42a5;
+  color: var(--pnk);
   background-color: lightgray;
 }
 .btnblue {
@@ -72,7 +71,7 @@ li {
 }
 
 .pink {
-  color: #ff42a5;
+  color: var(--pnk);
 }
 .grey {
   color: #534c64;
@@ -138,6 +137,10 @@ nav > ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.banner-ul {
+  list-style: none;
+  margin-bottom: 41px;
 }
 
 .div2-banner {
@@ -205,7 +208,6 @@ nav > ul {
   }
   .btnpink {
     padding: 1rem 1.2rem;
-    margin-right: 10px;
   }
   nav > ul,
   nav {
@@ -221,8 +223,16 @@ nav > ul {
   .banner {
     background-image: none;
   }
+  .banner-ul {
+    margin-bottom: 0.9rem;
+  }
   .div1-banner {
     padding: 50px;
+  }
+  .we-are-gamer {
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 5px;
   }
 }
 /* _________________________for tablet device _____________________*/
@@ -253,5 +263,10 @@ nav > ul {
   }
   .div2-banner {
     width: 50%;
+  }
+  .we-are-gamer {
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 5px;
   }
 }
