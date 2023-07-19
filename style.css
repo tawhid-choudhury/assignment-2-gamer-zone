@@ -194,6 +194,7 @@ nav > ul {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .card {
+  position: relative;
   max-width: 21rem;
   cursor: pointer;
 }
@@ -206,9 +207,9 @@ nav > ul {
   font-size: 1rem;
 }
 .relative {
-  position: relative;
-  bottom: 275px;
-  left: 3px;
+  position: absolute;
+  bottom: 45%;
+  right: 35%;
 }
 .card .relative {
   visibility: collapse;
@@ -231,16 +232,26 @@ nav > ul {
   display: flex;
   justify-content: right;
   align-items: center;
-  gap: 265px;
+  gap: 15%;
 }
 .textdiv {
   text-align: right;
   max-width: 341px;
+  bottom: 130px;
+}
+.picdiv {
+  max-width: 634.833px;
+  position: relative;
+}
+.rdr {
+  width: 100%;
 }
 .rel-pic {
   position: absolute;
-  top: 2500px;
-  right: 650px;
+  width: 50%;
+  height: 55%;
+  top: 53%;
+  right: 65%;
 }
 /* _________________________for mobile device   ____________________*/
 @media screen and (max-width: 576px) {
@@ -296,7 +307,8 @@ nav > ul {
   .div1-banner {
     padding: 50px;
   }
-  .we-are-gamer {
+  .we-are-gamer,
+  .sec4div1 {
     flex-direction: column;
     text-align: center;
     padding: 0px 5px;
@@ -305,8 +317,17 @@ nav > ul {
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  .card {
+    max-width: 70%;
+  }
   .play-text {
     font-size: 1rem;
+  }
+  .textdiv {
+    text-align: center;
+  }
+  .picdiv {
+    max-width: 70%;
   }
 }
 /* _________________________for tablet device _____________________*/
@@ -341,7 +362,8 @@ nav > ul {
   .div2-banner {
     width: 50%;
   }
-  .we-are-gamer {
+  .we-are-gamer,
+  .sec4div1 {
     flex-direction: column;
     text-align: center;
     padding: 0px 5px;
@@ -358,5 +380,11 @@ nav > ul {
   }
   .funny-videos {
     transform: scale(0.8);
+  }
+  .textdiv {
+    text-align: center;
+  }
+  .picdiv {
+    max-width: 70%;
   }
 }
