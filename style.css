@@ -47,27 +47,29 @@ li {
 .btnpink {
   background-color: var(--pnk);
   color: white;
-  padding: 21px 40px;
+  padding: 20px 40px;
   border-radius: 48px;
   /* margin-right: 24px; */
   border: none;
   margin-bottom: 2rem;
 }
 .btnpink:hover {
+  border: 2px solid var(--pnk);
   color: var(--pnk);
-  background-color: lightgray;
+  background-color: white;
 }
 .btnblue {
-  margin-left: 10px;
+  margin-left: 1%;
   border: none;
   background-color: #4ec5f7;
   color: white;
-  padding: 21px 40px;
+  padding: 20px 40px;
   border-radius: 48px;
 }
 .btnblue:hover {
+  border: 2px solid #4ec5f7;
   color: #4ec5f7;
-  background-color: lightgray;
+  background-color: white;
 }
 
 .pink {
@@ -227,6 +229,7 @@ nav > ul {
 .section-4 {
   max-width: 1440px;
   margin: auto;
+  padding-top: 5%;
 }
 .sec4div1 {
   display: flex;
@@ -253,6 +256,42 @@ nav > ul {
   top: 53%;
   right: 65%;
 }
+/* _________________________.section-4 end_________________________ */
+
+.career-section {
+  position: relative;
+  margin-top: 10%;
+  background-color: var(--pnk);
+  color: white;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+.career {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.career-div-2 {
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  z-index: 1;
+}
+.career-div-1 {
+  max-width: 800px;
+  z-index: 2;
+}
+.career-ul {
+  font-size: 1.25rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.lis {
+  margin-bottom: 1.25rem;
+}
+
 /* _________________________for mobile device   ____________________*/
 @media screen and (max-width: 576px) {
   .div1-background {
@@ -329,6 +368,23 @@ nav > ul {
   .picdiv {
     max-width: 70%;
   }
+  .career-ul {
+    font-size: 1rem;
+  }
+  .career-div-1 {
+    max-width: 90%;
+    margin: auto;
+  }
+  .career {
+    flex-direction: column;
+  }
+  .career-div-2 {
+    position: static;
+    max-width: 100%;
+  }
+  .career-div-2-img {
+    width: 100%;
+  }
 }
 /* _________________________for tablet device _____________________*/
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -352,6 +408,12 @@ nav > ul {
   }
   nav > ul {
     margin-top: 2rem;
+  }
+  .btnblue {
+    padding: 1rem 1.2rem;
+  }
+  .btnpink {
+    padding: 1rem 1.2rem;
   }
   .banner-container {
     justify-content: space-around;
@@ -386,5 +448,22 @@ nav > ul {
   }
   .picdiv {
     max-width: 70%;
+  }
+  .career-ul {
+    font-size: 1rem;
+  }
+  .career-div-1 {
+    max-width: 90%;
+    margin: auto;
+  }
+  .career {
+    flex-direction: column;
+  }
+  .career-div-2 {
+    position: static;
+    max-width: 100%;
+  }
+  .career-div-2-img {
+    width: 100%;
   }
 }
