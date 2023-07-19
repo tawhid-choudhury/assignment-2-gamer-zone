@@ -31,6 +31,10 @@ li {
   font-size: 3rem;
   font-weight: 600;
 }
+.semibold2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 .extrabold {
   font-size: 6rem;
   font-weight: 800;
@@ -264,6 +268,7 @@ nav > ul {
 }
 /* _________________________.section-4 end_________________________ */
 
+/* _________________________career section start_________________________ */
 .career-section {
   position: relative;
   margin-top: 10%;
@@ -278,7 +283,12 @@ nav > ul {
   display: flex;
   justify-content: space-between;
 }
+.career-div-1 > h1,
+p {
+  padding-bottom: 5%;
+}
 .career-div-2 {
+  /* transform: scale(); */
   position: absolute;
   right: 0%;
   top: 0%;
@@ -297,6 +307,39 @@ nav > ul {
 .lis {
   margin-bottom: 1.25rem;
 }
+/* _________________________career section end_________________________ */
+
+/* _________________________genre section start_________________________ */
+
+.genre {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 48px;
+  padding: 10px;
+  cursor: pointer;
+}
+.genre:hover {
+  border: 2px solid var(--pnk);
+  color: var(--pnk);
+}
+.game-genre {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* _________________________genre section end_________________________ */
 
 /* _________________________for mobile device   ____________________*/
 @media screen and (max-width: 576px) {
@@ -318,6 +361,9 @@ nav > ul {
   }
   .semibold {
     font-size: 2rem;
+  }
+  .semibold2 {
+    font-size: 1rem;
   }
   .description500 {
     font-size: 0.83rem;
@@ -401,6 +447,9 @@ nav > ul {
   }
   .semibold {
     font-size: 2rem;
+  }
+  .semibold2 {
+    font-size: 1rem;
   }
   .description500 {
     font-size: 0.83rem;
