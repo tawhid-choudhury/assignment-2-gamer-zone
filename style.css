@@ -279,6 +279,7 @@ nav li:hover {
 .picdiv {
   max-width: 634.833px;
   position: relative;
+  cursor: pointer;
 }
 .rdr {
   width: 100%;
