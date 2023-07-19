@@ -56,11 +56,27 @@ li {
   /* margin-right: 24px; */
   border: none;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 .btnpink:hover {
   border: 2px solid var(--pnk);
   color: var(--pnk);
   background-color: white;
+}
+.btnwhite {
+  background-color: white;
+  color: var(--pnk);
+  padding: 20px 40px;
+  border-radius: 48px;
+  /* margin-right: 24px; */
+  border: none;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.btnwhite:hover {
+  border: 2px solid white;
+  color: white;
+  background-color: var(--pnk);
 }
 .btnblue {
   margin-left: 1%;
@@ -69,6 +85,7 @@ li {
   color: white;
   padding: 20px 40px;
   border-radius: 48px;
+  cursor: pointer;
 }
 .btnblue:hover {
   border: 2px solid #4ec5f7;
@@ -119,6 +136,10 @@ nav > ul {
   align-items: center;
   justify-content: space-between;
 }
+nav li:hover {
+  cursor: pointer;
+  color: var(--pnk);
+}
 .special-li {
   border-radius: 8px;
   background: rgba(11, 2, 35, 0.1);
@@ -142,6 +163,9 @@ nav > ul {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
+  /* border: 1px solid black; */
+  width: 50%;
 }
 .banner-container {
   max-width: 1440px;
@@ -338,13 +362,67 @@ p {
   justify-content: center;
   align-items: center;
 }
-
 /* _________________________genre section end_________________________ */
+
+/* _________________________footer section start_________________________ */
+footer {
+  background: #0b0223;
+  color: white;
+}
+.footer-container {
+  padding-top: 8%;
+  padding-bottom: 8%;
+  max-width: 1440px;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pages li,
+.logos li {
+  list-style: none;
+  padding: 5px;
+  /* width: 50px; */
+}
+.pages li:hover,
+.logos li:hover {
+  color: var(--pnk);
+  cursor: pointer;
+}
+.pages ul,
+.logos ul {
+  padding-top: 4rem;
+  display: flex;
+  max-width: 800px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-p {
+  padding-top: 10%;
+  font-size: small;
+}
+/* _________________________footer section end_________________________ */
 
 /* _________________________for mobile device   ____________________*/
 @media screen and (max-width: 576px) {
   .banner {
     position: static;
+  }
+  .pages ul {
+    max-width: 395px;
+  }
+  .pages2 ul {
+    max-width: 330px;
+  }
+  .logos ul {
+    max-width: 260px;
+  }
+  .footer-p {
+    max-width: 250px;
   }
   .div1-background {
     position: relative;
@@ -458,6 +536,18 @@ p {
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .extrabold {
     font-size: 4rem;
+  }
+  .footer-p {
+    max-width: 250px;
+  }
+  .pages ul {
+    max-width: 395px;
+  }
+  .pages2 ul {
+    max-width: 330px;
+  }
+  .logos ul {
+    max-width: 260px;
   }
   .semibold {
     font-size: 2rem;
