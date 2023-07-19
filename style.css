@@ -178,7 +178,7 @@ nav > ul {
 
 /* _________________________Funny videos start______________________*/
 .funny-videos {
-  padding-top: 11rem;
+  padding-top: 4rem;
   max-width: 1440px;
   margin: auto;
   text-align: center;
@@ -190,13 +190,15 @@ nav > ul {
   padding-bottom: 3rem;
 }
 .cards {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .card {
   max-width: 21rem;
   cursor: pointer;
+}
+.cardimg {
+  width: 100%;
 }
 .play-text {
   padding-top: 25px;
@@ -207,19 +209,38 @@ nav > ul {
   position: relative;
   bottom: 275px;
   left: 3px;
-  /* background-color: #4ec5f7; */
 }
 .card .relative {
-  visibility: hidden;
+  visibility: collapse;
 }
 .cardimg:hover {
   display: block;
   filter: brightness(30%);
-  /* border: 5px solid var(--pnk); */
   border-radius: 24px;
 }
 .card:hover .relative {
   visibility: visible;
+}
+/* _________________________funny video end_________________________ */
+/* _________________________.section-4 start_________________________ */
+.section-4 {
+  max-width: 1440px;
+  margin: auto;
+}
+.sec4div1 {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 265px;
+}
+.textdiv {
+  text-align: right;
+  max-width: 341px;
+}
+.rel-pic {
+  position: absolute;
+  top: 2500px;
+  right: 650px;
 }
 /* _________________________for mobile device   ____________________*/
 @media screen and (max-width: 576px) {
@@ -280,6 +301,13 @@ nav > ul {
     text-align: center;
     padding: 0px 5px;
   }
+  .cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .play-text {
+    font-size: 1rem;
+  }
 }
 /* _________________________for tablet device _____________________*/
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -317,5 +345,18 @@ nav > ul {
     flex-direction: column;
     text-align: center;
     padding: 0px 5px;
+  }
+  .cards {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    padding: 0px 5px;
+  }
+  .play-text {
+    font-size: 1rem;
+  }
+  .funny-videos {
+    transform: scale(0.8);
   }
 }
