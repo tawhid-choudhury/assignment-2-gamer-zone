@@ -439,6 +439,20 @@ p {
   .career-div-2-img {
     width: 100%;
   }
+  .genre img {
+    width: 30%;
+  }
+  .genre h6 {
+    font-size: 0.7rem;
+  }
+  .genre {
+    padding: 15px 10px;
+    max-width: 90px;
+  }
+  .game-genre {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
 }
 /* _________________________for tablet device _____________________*/
 @media screen and (min-width: 576px) and (max-width: 768px) {
